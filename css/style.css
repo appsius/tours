@@ -55,20 +55,20 @@ body {
     font-size: 50px;
     font-weight: 500;
     letter-spacing: 25px;
-    animation: moveInLeft 1s ease-in-out; }
+    animation: moveInLeft 1s ease-out; }
   .heading-primary--sub {
     display: block;
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 17.4px;
-    animation: moveInRight 1s ease-in-out; }
+    animation: moveInRight 1s ease-out; }
 
 .heading-secondary {
   font-size: 3.5rem;
   font-weight: 700;
   display: inline-block;
   text-transform: uppercase;
-  background-image: linear-gradient(to right, #38fff5ce, #038680ce);
+  background-image: linear-gradient(to right, #5afaf2ce, #0a9992ce);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -78,10 +78,26 @@ body {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(29, 17, 1, 0.2); }
 
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
 .u-center-text {
   text-align: center; }
 
-.u-margin-bottom-8 {
+.u-margin-bottom-small {
+  margin-bottom: 1.3rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-big {
   margin-bottom: 8rem; }
 
 .btn:link, .btn:visited {
@@ -92,7 +108,8 @@ body {
   display: inline-block;
   border-radius: 100px;
   transition: all 0.2s;
-  position: relative; }
+  position: relative;
+  font-size: 1.8rem; }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -127,10 +144,29 @@ body {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards; }
 
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  color: #09d1c7ce;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #09d1c7ce;
+  padding: 3px;
+  transition: all 0.2s; }
+
+.btn-text:hover {
+  background-color: #09d1c7ce;
+  color: #fff6f6;
+  box-shadow: 0 1rem 2rem rgba(29, 17, 1, 0.15);
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(29, 17, 1, 0.15);
+  transform: translateY(0); }
+
 .header {
   height: 95vh;
   background-color: #0abcf9;
-  background-image: linear-gradient(to right bottom, rgba(56, 255, 245, 0.8), rgba(3, 134, 128, 0.8)), url(../img/landscape.jpg);
+  background-image: linear-gradient(to right bottom, rgba(90, 250, 242, 0.8), rgba(10, 153, 146, 0.8)), url(../img/landscape.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -143,7 +179,7 @@ body {
     height: 50px; }
   .header__text-box {
     position: absolute;
-    top: 40%;
+    top: 28%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
