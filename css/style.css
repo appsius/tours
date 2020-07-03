@@ -168,11 +168,9 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem; }
+  height: 52rem; }
   .card__side {
-    color: #fff;
-    font-size: 2rem;
-    height: 50rem;
+    height: 52rem;
     transition: all 0.8s ease;
     position: absolute;
     top: 0;
@@ -180,17 +178,55 @@ body {
     width: 100%;
     backface-visibility: hidden;
     border-radius: 3px;
+    overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(29, 17, 1, 0.15); }
     .card__side--front {
       background-color: white; }
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #ddd, #61045f); }
+        background-image: linear-gradient(to right bottom, #ddd, #9733ee); }
   .card:hover .card__side--front {
-    transform: rotateY(180deg); }
+    transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0); }
+  .card-picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: color;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    .card-picture--1 {
+      background-image: linear-gradient(to right bottom, #ddd, #9733ee), url(../../img/act1.jpg); }
+    .card-picture--2 {
+      background-image: url(../../img/feat14.jpg); }
+    .card-picture--3 {
+      background-image: url(../../img/feat14.jpg); }
+  .card-heading {
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: #fff6f6;
+    position: absolute;
+    top: 17rem;
+    right: 0; }
+  .card-heading-span {
+    padding: 1rem 1.5rem; }
+    .card-heading-span--1 {
+      background-image: linear-gradient(to right bottom, rgba(221, 221, 221, 0.85), rgba(151, 51, 238, 0.85)); }
+  .card__details {
+    padding: 3rem; }
+    .card__details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+      .card__details ul li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 1px solid #eee; }
 
 .composition {
   position: relative; }
@@ -245,6 +281,7 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
   .header__logo-box {
     position: absolute;
