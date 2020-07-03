@@ -28,8 +28,8 @@
 			&-1 {
 				background-image: linear-gradient(
 					to right bottom,
-					$color-primary-light,
-					$color-primary-dark
+					$color-thirdiary-light,
+					$color-thirdiary-dark
 				);
 			}
 
@@ -70,8 +70,8 @@
 		&--1 {
 			background-image: linear-gradient(
 					to right bottom,
-					$color-primary-light,
-					$color-primary-dark
+					$color-thirdiary-light,
+					$color-thirdiary-dark
 				),
 				url(../../img/act1.jpg);
 		}
@@ -112,8 +112,8 @@
 		&--1 {
 			background-image: linear-gradient(
 				to right bottom,
-				rgba($color-primary-light, 0.85),
-				rgba($color-primary-dark, 0.85)
+				rgba($color-thirdiary-light, 0.85),
+				rgba($color-thirdiary-dark, 0.85)
 			);
 		}
 		&--2 {

@@ -68,7 +68,7 @@ body {
   font-weight: 700;
   display: inline-block;
   text-transform: uppercase;
-  background-image: linear-gradient(to right, #30d3cbce, #0cc5bcce);
+  background-image: linear-gradient(to right, #21e0d7ce, #0f7a75ce);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -136,10 +136,10 @@ body {
     background-color: #301802; }
 
 .btn--green {
-  background-color: #c621e7;
+  background-color: #db26ff;
   color: #fff7f7; }
   .btn--green::after {
-    background-color: #c621e7; }
+    background-color: #db26ff; }
 
 .btn::after {
   content: '';
@@ -159,15 +159,15 @@ body {
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.8rem;
-  color: #09d1c7ce;
+  color: #29c2bace;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid #09d1c7ce;
+  border-bottom: 1px solid #29c2bace;
   padding: 3px;
   transition: all 0.2s; }
 
 .btn-text:hover {
-  background-color: #09d1c7ce;
+  background-color: #29c2bace;
   color: #fff7f7;
   box-shadow: 0 1rem 2rem rgba(29, 17, 1, 0.15);
   transform: translateY(-2px); }
@@ -197,9 +197,9 @@ body {
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #30d3cbce, #0cc5bcce); }
+        background-image: linear-gradient(to right bottom, #18e2b0, #09bd93); }
       .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #c621e7, #9e2eff); }
+        background-image: linear-gradient(to right bottom, #db26ff, #c415e7); }
       .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #f82793, #ff1592); }
   .card:hover .card__side--front {
@@ -213,9 +213,9 @@ body {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card-picture--1 {
-      background-image: linear-gradient(to right bottom, #30d3cbce, #0cc5bcce), url(../../img/act1.jpg); }
+      background-image: linear-gradient(to right bottom, #18e2b0, #09bd93), url(../../img/act1.jpg); }
     .card-picture--2 {
-      background-image: linear-gradient(to right bottom, #c621e7, #9e2eff), url(../../img/feat17.jpg); }
+      background-image: linear-gradient(to right bottom, #db26ff, #c415e7), url(../../img/feat17.jpg); }
     .card-picture--3 {
       background-image: linear-gradient(to right bottom, #f82793, #ff1592), url(../../img/feat20.jpg); }
   .card-heading {
@@ -230,9 +230,9 @@ body {
   .card-heading-span {
     padding: 1rem 1.5rem; }
     .card-heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(48, 211, 203, 0.85), rgba(12, 197, 188, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(24, 226, 176, 0.85), rgba(9, 189, 147, 0.85)); }
     .card-heading-span--2 {
-      background-image: linear-gradient(to right bottom, rgba(198, 33, 231, 0.85), rgba(158, 46, 255, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(219, 38, 255, 0.85), rgba(196, 21, 231, 0.85)); }
     .card-heading-span--3 {
       background-image: linear-gradient(to right bottom, rgba(248, 39, 147, 0.85), rgba(255, 21, 146, 0.85)); }
   .card__details {
@@ -285,7 +285,7 @@ body {
       left: 20%;
       top: 17rem; }
     .composition__photo:hover {
-      outline: 1.5rem solid #09d1c7ce;
+      outline: 1.5rem solid #29c2bace;
       transform: scale(1.05) translateY(-1rem);
       box-shadow: 0 2.5rem 4rem rgba(29, 17, 1, 0.5);
       z-index: 20; }
@@ -306,7 +306,7 @@ body {
     font-size: 6rem;
     margin-bottom: 0.5rem;
     display: inline-block;
-    background-image: linear-gradient(to right, #30d3cbce, #0cc5bcce);
+    background-image: linear-gradient(to right, #21e0d7ce, #0f7a75ce);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent; }
@@ -315,7 +315,7 @@ body {
   width: 75%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba(29, 17, 1, 0.1);
-  background-color: #fff7f7;
+  background-color: rgba(255, 247, 247, 0.6);
   border-radius: 3px;
   padding: 6rem;
   padding-left: 9rem;
@@ -358,10 +358,24 @@ body {
     transform: scale(1);
     filter: blur(3px) brightness(80%); }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.2;
+  overflow: hidden; }
+  .bg-video__content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
 .header {
   height: 95vh;
   background-color: #0abcf9;
-  background-image: linear-gradient(to right bottom, rgba(48, 211, 203, 0.8), rgba(12, 197, 188, 0.8)), url(../img/landscape.jpg);
+  background-image: linear-gradient(to right bottom, rgba(33, 224, 215, 0.8), rgba(15, 122, 117, 0.8)), url(../img/landscape.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -413,7 +427,7 @@ body {
 
 .section-features {
   padding: 20rem 0rem;
-  background-image: linear-gradient(to right bottom, rgba(48, 211, 203, 0.8), rgba(12, 197, 188, 0.8)), url(../../img/feat11.jpg);
+  background-image: linear-gradient(to right bottom, rgba(33, 224, 215, 0.8), rgba(15, 122, 117, 0.8)), url(../../img/feat11.jpg);
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10rem; }
@@ -426,5 +440,5 @@ body {
   margin-top: -8rem; }
 
 .section-stories {
-  padding: 15rem 0;
-  background-color: #fcf7f7; }
+  position: relative;
+  padding: 15rem 0; }
