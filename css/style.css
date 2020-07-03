@@ -68,7 +68,7 @@ body {
   font-weight: 700;
   display: inline-block;
   text-transform: uppercase;
-  background-image: linear-gradient(to right, #38e4dbce, #0a9992ce);
+  background-image: linear-gradient(to right, #30d3cbce, #0cc5bcce);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -131,15 +131,15 @@ body {
 
 .btn--white {
   background-color: #301802;
-  color: #fff6f6; }
+  color: #fff7f7; }
   .btn--white::after {
     background-color: #301802; }
 
 .btn--green {
-  background-color: #b118cf;
-  color: #fff6f6; }
+  background-color: #c621e7;
+  color: #fff7f7; }
   .btn--green::after {
-    background-color: #b118cf; }
+    background-color: #c621e7; }
 
 .btn::after {
   content: '';
@@ -168,7 +168,7 @@ body {
 
 .btn-text:hover {
   background-color: #09d1c7ce;
-  color: #fff6f6;
+  color: #fff7f7;
   box-shadow: 0 1rem 2rem rgba(29, 17, 1, 0.15);
   transform: translateY(-2px); }
 
@@ -197,11 +197,11 @@ body {
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #38e4dbce, #0a9992ce); }
+        background-image: linear-gradient(to right bottom, #30d3cbce, #0cc5bcce); }
       .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #b118cf, #9733ee); }
+        background-image: linear-gradient(to right bottom, #c621e7, #9e2eff); }
       .card__side--back-3 {
-        background-image: linear-gradient(to right bottom, #ff20a6, #ad2771); }
+        background-image: linear-gradient(to right bottom, #f82793, #ff1592); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -213,28 +213,28 @@ body {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card-picture--1 {
-      background-image: linear-gradient(to right bottom, #38e4dbce, #0a9992ce), url(../../img/act1.jpg); }
+      background-image: linear-gradient(to right bottom, #30d3cbce, #0cc5bcce), url(../../img/act1.jpg); }
     .card-picture--2 {
-      background-image: linear-gradient(to right bottom, #b118cf, #9733ee), url(../../img/feat17.jpg); }
+      background-image: linear-gradient(to right bottom, #c621e7, #9e2eff), url(../../img/feat17.jpg); }
     .card-picture--3 {
-      background-image: linear-gradient(to right bottom, #ff20a6, #ad2771), url(../../img/feat20.jpg); }
+      background-image: linear-gradient(to right bottom, #f82793, #ff1592), url(../../img/feat20.jpg); }
   .card-heading {
     font-size: 2.5rem;
     font-weight: 300;
     text-transform: uppercase;
     text-align: right;
-    color: #fff6f6;
+    color: #fff7f7;
     position: absolute;
     top: 17rem;
     right: 0; }
   .card-heading-span {
     padding: 1rem 1.5rem; }
     .card-heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(56, 228, 219, 0.85), rgba(10, 153, 146, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(48, 211, 203, 0.85), rgba(12, 197, 188, 0.85)); }
     .card-heading-span--2 {
-      background-image: linear-gradient(to right bottom, rgba(177, 24, 207, 0.85), rgba(151, 51, 238, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(198, 33, 231, 0.85), rgba(158, 46, 255, 0.85)); }
     .card-heading-span--3 {
-      background-image: linear-gradient(to right bottom, rgba(255, 32, 166, 0.85), rgba(173, 39, 113, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(248, 39, 147, 0.85), rgba(255, 21, 146, 0.85)); }
   .card__details {
     padding: 3rem; }
     .card__details ul {
@@ -246,7 +246,7 @@ body {
         font-size: 1.5rem;
         padding: 1rem; }
         .card__details ul li:not(:last-child) {
-          border-bottom: 1px solid #eee; }
+          border-bottom: 1px solid #e4e4e4; }
   .card__cta {
     position: absolute;
     top: 50%;
@@ -256,7 +256,7 @@ body {
     width: 90%; }
   .card__price-box {
     text-align: center;
-    color: #fff6f6;
+    color: #fff7f7;
     margin-bottom: 8rem; }
   .card__price-only {
     font-size: 1.4rem;
@@ -293,7 +293,7 @@ body {
     transform: scale(0.95); }
 
 .feature-box {
-  background-color: rgba(255, 246, 246, 0.8);
+  background-color: rgba(255, 247, 247, 0.8);
   font-size: 1.5rem;
   padding: 2.5rem;
   text-align: center;
@@ -306,15 +306,39 @@ body {
     font-size: 6rem;
     margin-bottom: 0.5rem;
     display: inline-block;
-    background-image: linear-gradient(to right, #38e4dbce, #0a9992ce);
+    background-image: linear-gradient(to right, #30d3cbce, #0cc5bcce);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent; }
 
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(29, 17, 1, 0.1);
+  background-color: #fff7f7;
+  border-radius: 3px;
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: 1.6rem;
+  transform: skewX(-12deg); }
+  .story__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(12deg); }
+  .story__img {
+    height: 100%; }
+  .story__text {
+    transform: skewX(12deg); }
+
 .header {
   height: 95vh;
   background-color: #0abcf9;
-  background-image: linear-gradient(to right bottom, rgba(56, 228, 219, 0.8), rgba(10, 153, 146, 0.8)), url(../img/landscape.jpg);
+  background-image: linear-gradient(to right bottom, rgba(48, 211, 203, 0.8), rgba(12, 197, 188, 0.8)), url(../img/landscape.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -360,13 +384,13 @@ body {
     width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .section-about {
-  background-color: #f7f7f7;
+  background-color: #fcf7f7;
   padding: 25rem 0;
   margin-top: -20vh; }
 
 .section-features {
   padding: 20rem 0rem;
-  background-image: linear-gradient(to right bottom, rgba(56, 228, 219, 0.8), rgba(10, 153, 146, 0.8)), url(../../img/feat11.jpg);
+  background-image: linear-gradient(to right bottom, rgba(48, 211, 203, 0.8), rgba(12, 197, 188, 0.8)), url(../../img/feat11.jpg);
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10rem; }
@@ -374,6 +398,10 @@ body {
     transform: skewY(7deg); }
 
 .section-tours {
-  background-color: #f7f7f7;
+  background-color: #fcf7f7;
   padding: 25rem 0 15rem 0;
   margin-top: -8rem; }
+
+.section-stories {
+  padding: 15rem 0;
+  background-color: #fcf7f7; }
