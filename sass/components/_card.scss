@@ -25,19 +25,19 @@
 		&--back {
 			transform: rotateY(180deg);
 
-			&-1 {
-				background-image: linear-gradient(
-					to right bottom,
-					$color-thirdiary-light,
-					$color-thirdiary-dark
-				);
-			}
-
 			&-2 {
 				background-image: linear-gradient(
 					to right bottom,
 					$color-secondary-light,
 					$color-secondary-dark
+				);
+			}
+
+			&-1 {
+				background-image: linear-gradient(
+					to right bottom,
+					$color-thirdiary-light,
+					$color-thirdiary-dark
 				);
 			}
 
@@ -67,15 +67,6 @@
 		-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 		clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
-		&--1 {
-			background-image: linear-gradient(
-					to right bottom,
-					$color-thirdiary-light,
-					$color-thirdiary-dark
-				),
-				url(../../img/act1.jpg);
-		}
-
 		&--2 {
 			background-image: linear-gradient(
 					to right bottom,
@@ -83,6 +74,15 @@
 					$color-secondary-dark
 				),
 				url(../../img/feat17.jpg);
+		}
+
+		&--1 {
+			background-image: linear-gradient(
+					to right bottom,
+					$color-thirdiary-light,
+					$color-thirdiary-dark
+				),
+				url(../../img/act1.jpg);
 		}
 
 		&--3 {
@@ -109,13 +109,6 @@
 	&-heading-span {
 		padding: 1rem 1.5rem;
 
-		&--1 {
-			background-image: linear-gradient(
-				to right bottom,
-				rgba($color-thirdiary-light, 0.85),
-				rgba($color-thirdiary-dark, 0.85)
-			);
-		}
 		&--2 {
 			background-image: linear-gradient(
 				to right bottom,
@@ -123,6 +116,15 @@
 				rgba($color-secondary-dark, 0.85)
 			);
 		}
+
+		&--1 {
+			background-image: linear-gradient(
+				to right bottom,
+				rgba($color-thirdiary-light, 0.85),
+				rgba($color-thirdiary-dark, 0.85)
+			);
+		}
+
 		&--3 {
 			background-image: linear-gradient(
 				to right bottom,
