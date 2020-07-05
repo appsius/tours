@@ -12,3 +12,45 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
+// Media Query Manager
+
+// 0 - 600xp       > Phone
+// 600px - 900px   > Tablet potrait
+// 900px - 1200px  > Tablet landscape
+// 1200px - 1800px > [Our normal styles]
+// 1800px +        > Big desktop
+
+// phone - tab-port - tab-land - big-desktop
+
+// 1 em = 16px
+
+@mixin respond($breakpoint) {
+	@if $breakpoint == phone {
+		//For 600px
+		@media (max-width: 37.5em) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == tab-port {
+		//For 900px
+		@media (max-width: 56.25em) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == tab-land {
+		//For 1200px
+		@media (max-width: 75em) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == big-desktop {
+		//For 1800px
+		@media (min-width: 112.5em) {
+			@content;
+		}
+	}
+}
