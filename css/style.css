@@ -76,7 +76,7 @@ body {
   transition: all 0.2s; }
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
-    text-shadow: 0.5rem 1rem 2rem rgba(29, 17, 1, 0.2); }
+    text-shadow: 0.5rem 1rem 2rem rgba(24, 23, 22, 0.2); }
 
 .heading-tertiary {
   color: #301802;
@@ -134,13 +134,13 @@ body {
 
 .btn--white {
   background-color: #301802;
-  color: #f5eded; }
+  color: #fcfcfc; }
   .btn--white::after {
     background-color: #301802; }
 
 .btn--green {
   background-color: #18e2b0;
-  color: #f5eded; }
+  color: #fcfcfc; }
   .btn--green::after {
     background-color: #18e2b0; }
 
@@ -171,12 +171,12 @@ body {
 
 .btn-text:hover {
   background-color: #29c2bace;
-  color: #f5eded;
-  box-shadow: 0 1rem 2rem rgba(29, 17, 1, 0.15);
+  color: #fcfcfc;
+  box-shadow: 0 1rem 2rem rgba(24, 23, 22, 0.15);
   transform: translateY(-2px); }
 
 .btn-text:active {
-  box-shadow: 0 0.5rem 1rem rgba(29, 17, 1, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(24, 23, 22, 0.15);
   transform: translateY(0); }
 
 .bg-video {
@@ -208,7 +208,7 @@ body {
     backface-visibility: hidden;
     border-radius: 3px;
     overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba(29, 17, 1, 0.15); }
+    box-shadow: 0 1.5rem 4rem rgba(24, 23, 22, 0.15); }
     .card__side--front {
       background-color: white; }
     .card__side--back {
@@ -240,7 +240,7 @@ body {
     font-weight: 300;
     text-transform: uppercase;
     text-align: right;
-    color: #f5eded;
+    color: #fcfcfc;
     position: absolute;
     top: 17rem;
     right: 0; }
@@ -273,7 +273,7 @@ body {
     width: 90%; }
   .card__price-box {
     text-align: center;
-    color: #f5eded;
+    color: #fcfcfc;
     margin-bottom: 8rem; }
   .card__price-only {
     font-size: 1.4rem;
@@ -286,7 +286,7 @@ body {
   position: relative; }
   .composition__photo {
     width: 55%;
-    box-shadow: 0 1.5rem 4rem rgba(29, 17, 1, 0.4);
+    box-shadow: 0 1.5rem 4rem rgba(24, 23, 22, 0.4);
     border-radius: 2px;
     position: absolute;
     z-index: 10;
@@ -304,18 +304,18 @@ body {
     .composition__photo:hover {
       outline: 1.5rem solid #29c2bace;
       transform: scale(1.05) translateY(-1rem);
-      box-shadow: 0 2.5rem 4rem rgba(29, 17, 1, 0.5);
+      box-shadow: 0 2.5rem 4rem rgba(24, 23, 22, 0.5);
       z-index: 20; }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
 
 .feature-box {
-  background-color: rgba(245, 237, 237, 0.8);
+  background-color: rgba(252, 252, 252, 0.8);
   font-size: 1.5rem;
   padding: 2.5rem;
   text-align: center;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(29, 17, 1, 0.15);
+  box-shadow: 0 1.5rem 4rem rgba(24, 23, 22, 0.15);
   transition: transform 0.3s; }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
@@ -337,7 +337,7 @@ body {
   color: inherit;
   padding: 1.5rem 2rem;
   border-radius: 2px;
-  background-color: rgba(245, 237, 237, 0.5);
+  background-color: rgba(252, 252, 252, 0.5);
   border: none;
   border-bottom: 3px solid transparent;
   width: 85%;
@@ -345,7 +345,7 @@ body {
   transition: all 0.3s; }
   .form__input:focus {
     outline: none;
-    box-shadow: 0 1rem 2rem rgba(29, 17, 1, 0.1);
+    box-shadow: 0 1rem 2rem rgba(24, 23, 22, 0.1);
     border-bottom: 3px solid #29c2bace; }
   .form__input:focus:invalid {
     border-bottom: 3px solid #ff0f6b; }
@@ -404,11 +404,55 @@ body {
 .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
   opacity: 1; }
 
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(24, 23, 22, 0.9);
+  z-index: 1700; }
+  .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    background-color: #fcfcfc;
+    box-shadow: 0 2rem 4rem rgba(24, 23, 22, 0.2);
+    border-radius: 3px;
+    display: table;
+    overflow: hidden; }
+  .popup__left {
+    width: 33.333333%;
+    display: table-cell; }
+  .popup__right {
+    width: 66.6666667;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem; }
+  .popup__img {
+    display: block;
+    width: 100%; }
+  .popup__text {
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+    -moz-column-count: 2;
+    -moz-column-gap: 4rem;
+    -moz-column-rule: 1px solid #ddcfcf;
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid #ddcfcf;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto; }
+
 .story {
   width: 75%;
   margin: 0 auto;
-  box-shadow: 0 3rem 6rem rgba(29, 17, 1, 0.1);
-  background-color: rgba(245, 237, 237, 0.6);
+  box-shadow: 0 3rem 6rem rgba(24, 23, 22, 0.1);
+  background-color: rgba(252, 252, 252, 0.6);
   border-radius: 3px;
   padding: 6rem;
   padding-left: 9rem;
@@ -437,7 +481,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, 10%);
-    color: #f5eded;
+    color: #fcfcfc;
     text-transform: uppercase;
     text-align: center;
     font-size: 1.7rem;
@@ -481,7 +525,7 @@ body {
     transition: all 0.2s; }
   .footer__link:hover, .footer__link:active {
     color: #29c2bace;
-    box-shadow: 0 1rem 2rem rgba(29, 17, 1, 0.4);
+    box-shadow: 0 1rem 2rem rgba(24, 23, 22, 0.4);
     transform: rotate(5deg) scale(1.3); }
   .footer__copyright {
     border-top: 1px solid #f8eeee;
@@ -554,8 +598,8 @@ body {
   width: 7rem;
   height: 7rem;
   border-radius: 50%;
-  background-color: #f5eded;
-  box-shadow: 0 1rem 3rem rgba(29, 17, 1, 0.2);
+  background-color: #fcfcfc;
+  box-shadow: 0 1rem 3rem rgba(24, 23, 22, 0.2);
   cursor: pointer;
   z-index: 1600;
   text-align: center; }
@@ -604,10 +648,10 @@ body {
   font-size: 3rem;
   font-weight: 300;
   padding: 1rem 2rem;
-  color: #f5eded;
+  color: #fcfcfc;
   text-decoration: none;
   text-transform: uppercase;
-  background-image: linear-gradient(120deg, transparent 0%, transparent 49.9%, #f5eded 50%);
+  background-image: linear-gradient(120deg, transparent 0%, transparent 49.9%, #fcfcfc 50%);
   background-size: 227%;
   transition: all 0.4s; }
 
@@ -697,10 +741,10 @@ body {
   background-image: linear-gradient(to right bottom, #23d6c1, #0a968a); }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(245, 237, 237, 0.88) 0%, rgba(245, 237, 237, 0.88) 50%, transparent 50%), url(../../img/book1.jpg);
+  background-image: linear-gradient(105deg, rgba(252, 252, 252, 0.88) 0%, rgba(252, 252, 252, 0.88) 50%, transparent 50%), url(../../img/book1.jpg);
   background-size: cover;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(29, 17, 1, 0.2);
+  box-shadow: 0 1.5rem 4rem rgba(24, 23, 22, 0.2);
   height: 53.9rem; }
   .book__form {
     width: 50%;
