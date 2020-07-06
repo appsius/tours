@@ -10,6 +10,13 @@
 	visibility: hidden;
 	transition: all 0.3s;
 
+	@supports (-webkit-backdrop-filter: blur(10px)) or
+		(backdrop-filter: blur(10px)) {
+		-webkit-backdrop-filter: blur(10px);
+		backdrop-filter: blur(10px);
+		background-color: rgba($color-black, 0.4);
+	}
+
 	&__content {
 		@include absCenter;
 
@@ -21,7 +28,7 @@
 		overflow: hidden;
 		opacity: 0;
 		transform: translate(-50%, -50%) scale(0.3);
-		transition: all 0.5s 0.1s;
+		transition: all 0.4s 0.1s;
 
 		@include respond(tab-land) {
 			width: 80%;
