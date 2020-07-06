@@ -105,10 +105,28 @@
 					<div class="col-1-of-2">
 						<div class="composition">
 							<img
-								src="img/sea1.jpg"
+								srcset="./img/sea1.jpg 300w, ./img/sea1L.jpg 1000w"
+								sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
 								alt="Sea 1"
 								class="composition__photo composition__photo--p1"
+								src="./img/sea1L.jpg"
 							/>
+							<img
+								srcset="./img/sea2.jpg 300w, ./img/sea2L.jpg 1000w"
+								sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+								alt="Sea 2"
+								class="composition__photo composition__photo--p2"
+								src="./img/sea2L.jpg"
+							/>
+							<img
+								srcset="./img/sea3.jpg 300w, ./img/sea3L.jpg 1000w"
+								sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+								alt="Sea 3"
+								class="composition__photo composition__photo--p3"
+								src="./img/sea3L.jpg"
+							/>
+							<!-- 
+							<img src="img/sea1.jpg" alt="Sea 1" />
 							<img
 								src="img/sea2.jpg"
 								alt="Sea 2"
@@ -118,7 +136,7 @@
 								src="img/sea3.jpg"
 								alt="Sea 3"
 								class="composition__photo composition__photo--p3"
-							/>
+							/> -->
 						</div>
 					</div>
 				</div>
@@ -486,6 +504,7 @@
 					/>
 					<source srcset="./img/whale_2x.png 2x" />
 					<img
+						src="./img/whale_2x.png"
 						srcset="./img/whale_1x.png 1x, ./img/whale_2x.png 2x"
 						alt="Footer logo"
 					/>
