@@ -6,7 +6,7 @@
 			rgba($color-primary-light, 0.8),
 			rgba($color-primary-dark, 0.8)
 		),
-		url(../img/landscape.jpg);
+		url(../../img/landscape.jpg);
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -17,8 +17,8 @@
 		height: 95vh;
 	}
 
-	// @media (min-resolution: 192dpi) and (min-width: 37.5em),
-	// 	(-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+	// @media only screen and (min-resolution: 192dpi) and only screen and (min-width: 37.5em),
+	// 	(-webkit-min-device-pixel-ratio: 2) and only screen and (min-width: 37.5em), only screen and
 	// 	(min-width: 125em) {
 	// 	background-image: linear-gradient(
 	// 			to right bottom,
@@ -41,6 +41,10 @@
 
 	&__logo {
 		height: 50px;
+
+		@include respond(phone) {
+			display: none;
+		}
 	}
 
 	&__text-box {
@@ -49,5 +53,10 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		text-align: center;
+
+		@include respond(phone) {
+			width: 45%;
+			top: 40%;
+		}
 	}
 }

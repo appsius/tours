@@ -8,6 +8,10 @@ html {
 	// This defines what 1rem is
 	font-size: 62.5%;
 
+	@include respond(phone) {
+		font-size: 45%;
+	}
+
 	@include respond(tab-land) {
 		font-size: 56.25%;
 	}
@@ -28,4 +32,9 @@ body {
 	@include respond(tab-port) {
 		padding: 0;
 	}
+}
+
+::selection {
+	background-color: $color-primary;
+	color: $color-white;
 }

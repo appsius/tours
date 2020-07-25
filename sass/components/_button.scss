@@ -12,6 +12,19 @@
 		position: relative;
 		font-size: 1.125 * $default-font-size;
 
+		@include respond(tab-port) {
+			letter-spacing: 0.2rem;
+			padding: 12px 28px;
+			font-size: 1 * $default-font-size;
+		}
+
+		@include respond(phone) {
+			display: inline-block;
+			letter-spacing: 0.2rem;
+			padding: 12px 30px;
+			font-size: 0.81 * $default-font-size;
+		}
+
 		// For book button element
 		border: none;
 		cursor: pointer;

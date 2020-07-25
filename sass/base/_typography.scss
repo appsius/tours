@@ -21,9 +21,22 @@ body {
 
 		animation: moveInLeft 1s ease-out;
 
-		@include respond(phone) {
-			letter-spacing: 1rem;
+		@include respond(tab-land) {
+			letter-spacing: 2rem;
+		}
+
+		@include respond(tab-port) {
+			display: block;
 			font-size: 5rem;
+			font-weight: 500;
+			letter-spacing: 1.5rem;
+			margin-bottom: 2rem;
+		}
+
+		@include respond(phone) {
+			margin-bottom: 3rem;
+			letter-spacing: 1rem;
+			font-size: 4rem;
 		}
 	}
 
@@ -35,8 +48,23 @@ body {
 
 		animation: moveInRight 1s ease-out;
 
-		@include respond(phone) {
+		@include respond(tab-land) {
+			letter-spacing: 1.5rem;
+			font-weight: 500;
+			margin-top: 2rem;
+		}
+
+		@include respond(tab-port) {
+			display: block;
+			font-size: 2.4rem;
+			font-weight: 500;
 			letter-spacing: 0.5rem;
+		}
+
+		@include respond(phone) {
+			margin-bottom: 20px;
+			letter-spacing: 0.8rem;
+			font-size: 2rem;
 		}
 	}
 }
@@ -56,6 +84,10 @@ body {
 	color: transparent;
 	letter-spacing: 0.2rem;
 	transition: all 0.2s;
+
+	@include respond(tab-port) {
+		margin-top: 1rem;
+	}
 
 	@include respond(tab-port) {
 		font-size: 3rem;
